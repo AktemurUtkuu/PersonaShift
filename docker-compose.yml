@@ -6,7 +6,7 @@ services:
     container_name: personashift_postgres
     environment:
       POSTGRES_USER: admin
-      POSTGRES_PASSWORD: shift123
+      POSTGRES_PASSWORD: kendi_sifreniz
       POSTGRES_DB: personashift_management
     ports:
       - "5433:5432"
