@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  personashift_db:
+    image: postgres:15-alpine
+    container_name: personashift_postgres
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: shift123
+      POSTGRES_DB: personashift_management
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

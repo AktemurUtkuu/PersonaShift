@@ -1,0 +1,8 @@
+*.pyc
+/basicsr
+/dist
+/gfpgan
+/venv
+/build
+/models
+.env
